@@ -20,9 +20,7 @@ function Person:new(name)
         return "Person "..self.name
     end
 
-    -- assignClass(public, self)
-    setmetatable(public, self)
-    self.__index = self
+    assignClass(public, self)
     return public
 end
 

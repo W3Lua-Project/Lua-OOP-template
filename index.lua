@@ -14,18 +14,3 @@ import.encapsulation = {}
 import.encapsulation.Person = require 'Lua-OOP-template.encapsulation'
 
 import.polymorphism = require 'Lua-OOP-template.polymorphism'
-
--- LuaOOPTemplate = {
---     Functions = require 'Lua-OOP-template.functions',
---     create = {
---         Person = require 'Lua-OOP-template.create'
---     },
---     inheritance = {
---         Woman = require 'Lua-OOP-template.inheritance'
---     },
---     encapsulation = {
---         Person = require 'Lua-OOP-template.encapsulation'
---     },
---     polymorphism = require 'Lua-OOP-template.polymorphism'
--- }
--- local import = LuaOOPTemplate
