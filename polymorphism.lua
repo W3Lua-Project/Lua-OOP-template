@@ -46,4 +46,7 @@ print(masha:getName())   --> Person protected Вася
 
 print(masha:getName2())  --> Woman Вася
 
-return { Person = Person, Woman = Woman }
+LuaOOPTemplate.polymorphism = {
+    Person = Person,
+    Woman = Woman
+}

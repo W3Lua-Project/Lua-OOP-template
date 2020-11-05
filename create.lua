@@ -2,7 +2,7 @@ local print = LuaOOPTemplate.Functions.print
 
 --класс
 ---@class Person
-local Person = {} ---@type Person
+local Person = {}
 --тело класса
 function Person:new(fName, lName)
     
@@ -31,4 +31,6 @@ print(vasya.firstName)  --> результат: Вася
 --обращаемся к методу
 print(vasya:getName())  --> результат: Вася
 
-return Person
+LuaOOPTemplate.create = {
+    Person = Person
+}

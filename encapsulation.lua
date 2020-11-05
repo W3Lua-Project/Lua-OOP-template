@@ -1,6 +1,7 @@
 local print = LuaOOPTemplate.Functions.print
 
-local Person = {} ---@type Person
+---@class Person
+local Person = {} 
 
 function Person:new(name)
     local private = {
@@ -29,4 +30,6 @@ print(vasya.age) --> результат: nil
 
 print(vasya:getAge()) --> результат: 18
 
-return Person
+LuaOOPTemplate.encapsulation = {
+    Person = Person
+}

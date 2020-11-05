@@ -9,4 +9,6 @@ Woman = extendedClass(Person)
 local masha = Woman:new('Марья', 'Ивановна')
 print(masha:getName()) --> результат: Марья
 
-return Woman
+LuaOOPTemplate.inheritance = {
+    Woman = Woman
+}

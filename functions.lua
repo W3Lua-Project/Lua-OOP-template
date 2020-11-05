@@ -1,22 +1,23 @@
-local export = {}
-
-function export.assignClass(obj,class)
+function assignClass(obj,class)
     setmetatable(obj,class)
     class.__index = class
 end
 
-function export.extendedClass(parent)
+function extendedClass(parent)
     local child = {}
     setmetatable(child, {__index = parent})
     return child
 end
 
+
 local isDebug = true
-function export.print(output)
+local function _print(output)
     if isDebug then
         print(output)
     end
 end
-export.isDebug = isDebug
 
-return export
+LuaOOPTemplate.Functions = {
+    isDebug = isDebug,
+    print = _print
+}
