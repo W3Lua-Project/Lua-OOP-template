@@ -1,6 +1,7 @@
 local print = LuaOOPTemplate.Functions.print
 
-local Person = {} ---@type Person
+---@class Person
+local Person = {}
 function Person:new(name)
     local private = {
         age = 18
@@ -25,7 +26,7 @@ function Person:new(name)
 end
 
 --создадим класс, унаследованный от Person
----@type Woman
+---@class Woman
 local Woman = extendedClass(Person)  --не забываем про эту функцию
 
 --переопределим защищенный метод 

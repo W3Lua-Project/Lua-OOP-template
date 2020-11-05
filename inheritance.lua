@@ -2,7 +2,7 @@ local Person = LuaOOPTemplate.create.Person
 local print = LuaOOPTemplate.Functions.print
 
 ---@class Woman:Person
-local Woman = {} ---@type Woman
+local Woman = {}
 --наследуемся
 Woman = extendedClass(Person)
 --проверяем
