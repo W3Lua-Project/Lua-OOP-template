@@ -1,4 +1,4 @@
-# Lua-OOP-template
+# OOP Template
 Образец реализации ООП на Lua
 
 Установка:
