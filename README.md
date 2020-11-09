@@ -1,4 +1,6 @@
 # Lua-OOP-template
 Образец реализации ООП на Lua
 
-Импорт репозитория: `ghrcl wc3lua/oop-template`
+Установка:
+`cd modules`
+`req wc3lua oop-template`
